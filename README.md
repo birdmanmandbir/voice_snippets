@@ -5,3 +5,6 @@ application for chinese voice recognition
 ## some tools to use
 [修改剪贴板](https://herechen.github.io/technology/copy-a-string-to-the-clipboard-on-windows/)
 [中文转拼音](https://github.com/mozillazg/python-pinyin)
+
+## TODO
+- [ ] 能否在光标处直接输入
