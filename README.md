@@ -1,47 +1,19 @@
-# voice_snippets Readme
-application for chinese voice recognition
+# voice_snippets
+为开源中文语音识别项目[asrt](https://github.com/nl8590687/ASRT_SpeechRecognition)开发的python客户端
+GUI使用[PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)开发
+## 功能
+用户预先在客户端中定义key和value, 客户端录音后将音频信息通过http协议发给服务端, 接收服务端回复的拼音后与sqlite数据库的key进行匹配并输出相应value到剪贴板
+## 依赖包
+PySimpleGUI 4.13.1
 
-## model selection
+PyAudio 0.2.11
 
-[Alibaba DFSMN](https://github.com/alibaba/Alibaba-MIT-Speech)
+pypinyin 0.36.0
+## 运行
+1.安装[asrt](https://github.com/nl8590687/ASRT_SpeechRecognition)的依赖
 
-> description:
->
->  重磅！阿里开源自研语音识别模型DFSMN，准确率高达96.04% - 阿里技术的文章 - 知乎 https://zhuanlan.zhihu.com/p/37846011 
->
->  https://zhuanlan.zhihu.com/p/54925544 
+2.运行[asrt release](https://github.com/nl8590687/ASRT_SpeechRecognition/releases/download/v0.6.0/ASRT_v0.6.0.zip)release中的asrserver.py
 
-- GRU + CTC
+3.运行本项目中的`main.py`
 
-- CNN + LSTM
-
-- RNN-T
-
-- LAS
-
-> 语音识别中的End2End模型: CTC, RNN-T与LAS - 川陀学者的文章 - 知乎 https://zhuanlan.zhihu.com/p/62836549 
-
-## Paper
-
-[ ATTENTION-BASED END-TO-END SPEECH RECOGNITION ON VOICE SEARCH ](https://arxiv.org/pdf/1707.07167.pdf)
-
-
-
-## server
-
-[ASRT](https://github.com/nl8590687/ASRT_SpeechRecognition)
-
-> 绝佳的ASR学习方案：这是一套开源的中文语音识别系统 - 机器之心的文章 - 知乎 https://zhuanlan.zhihu.com/p/56483643 
-
-[DeepSpeechRecognition](https://audier.github.io/2018/09/11/chinese-speech-asrt/)
-
-## some tools to use
-[修改剪贴板](https://herechen.github.io/technology/copy-a-string-to-the-clipboard-on-windows/)
-[中文转拼音](https://github.com/mozillazg/python-pinyin)
-
-## About test accuracy
-
- https://www.cnblogs.com/findyou/p/10646312.html
-
-## TODO
-- [ ] 能否在光标处直接输入
+![](./picture/1.png)
