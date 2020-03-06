@@ -16,4 +16,4 @@ pypinyin 0.36.0
 
 3.运行本项目中的`main.py`
 
-![](./picture/1.png)
+![](./pictures/1.png)
