@@ -12,7 +12,7 @@ pypinyin 0.36.0
 ## 运行
 1.安装[asrt](https://github.com/nl8590687/ASRT_SpeechRecognition)的依赖
 
-2.运行[asrt release](https://github.com/nl8590687/ASRT_SpeechRecognition/releases/download/v0.6.0/ASRT_v0.6.0.zip)release中的asrserver.py
+2.运行[asrt release](https://github.com/nl8590687/ASRT_SpeechRecognition/releases/download/v0.6.0/ASRT_v0.6.0.zip)中的asrserver.py
 
 3.运行本项目中的`main.py`
 
